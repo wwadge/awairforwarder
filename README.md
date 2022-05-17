@@ -34,7 +34,9 @@ This app will move PLANET funds from the wallets you specify to a target wallet.
 
 a) Via docker: 
 
-`docker run -it -v $(pwd)/application.yaml:/tmp/application.yaml  wwadge/planetsforwarder --spring.config.location=/tmp/application.yaml`
+`docker run -it -v /path/to/your/configfile.yaml:/tmp/application.yaml  wwadge/planetsforwarder --spring.config.location=/tmp/application.yaml`
+
+What we're doing here is mounting your file external to docker ("/path/to/your/configfile.yaml") to /tmp/application.yaml and telling the app to use that config internally.
 
 b) Or build the code: `./gradlew build` and run using java: `java -jar build/libs/planetsforwarder-0.0.1-SNAPSHOT.jar`
 

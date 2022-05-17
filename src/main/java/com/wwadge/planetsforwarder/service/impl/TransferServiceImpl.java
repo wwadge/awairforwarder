@@ -51,6 +51,7 @@ public class TransferServiceImpl implements TransferService {
   @Scheduled(cron = "${planets.schedule:-}")
   public void start() throws Exception {
 
+    log.info("Starting execution...");
     AlgodClient client = new AlgodClient("http://mainnet-api.algonode.network", 80, "");
 
     Map<AccountDetail, Account> accounts = new LinkedHashMap<>();
