@@ -1,0 +1,20 @@
+planets:
+    from:
+        - name: Sensor 1
+          seed: xxx
+          percentageToTransfer: 1.0
+        - name: Sensor 2
+          seed: xxx
+          percentageToTransfer: 0.5
+    to: AJW...
+    # For example, "0 * * * * MON-FRI" means once per minute on weekdays
+    # (at the top of the minute - the 0th second).
+    # The fields read from left to right are interpreted as follows.
+    # second
+    # minute
+    # hour
+    # day of month
+    # month
+    # day of week
+    # The special value "-" indicates a disabled cron i.e. a 1 shot
+    schedule: "-"
