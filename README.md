@@ -51,3 +51,9 @@ Example: You can keep it running and the scheduler will fire at 1pm or
 you can drive the schedule externally (eg a cloud build) where the code does its work and quits.
 
 Please look in the sample config file for details.
+
+
+# Useful?
+
+Found this app useful? Donate PLANET/ALGO to this address: 4QHBG2ZT5W7I6ULG4OTSZMAUB7MDGBDNKVG4DJIUTKA2STQNV7YMH4IVFQ 
+
